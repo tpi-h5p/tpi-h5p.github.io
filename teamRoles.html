@@ -1,0 +1,25 @@
+<html>
+
+<style>
+   #container {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+   }
+</style>
+
+<div id='container'></div>
+<script type="text/javascript" src="/h5p/main.bundle.js"></script>
+
+<script>
+   const el = document.getElementById('container');
+   const options = {
+      h5pJsonPath: '/teamRoles',
+      frameJs: '/h5p/frame.bundle.js',
+      frameCss: '/h5p/styles/h5p.css',
+   }
+   new H5PStandalone.H5P(el, options);
+</script>
+
+</html>
